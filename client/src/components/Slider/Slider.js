@@ -27,6 +27,7 @@ function CardsSlider({
           infinite: true,
           slidesToScroll: 1,
           swipeToSlide: true,
+          slidesToShow: 3,
         },
       },
       {
@@ -36,7 +37,7 @@ function CardsSlider({
           infinite: true,
           slidesToScroll: 1,
           swipeToSlide: true,
-          slideToShow: 3,
+          slidesToShow: 3,
         },
       },
       {
@@ -45,7 +46,7 @@ function CardsSlider({
           infinite: true,
           slidesToScroll: 1,
           swipeToSlide: true,
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
     ],

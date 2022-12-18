@@ -7,7 +7,7 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
-import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { Button } from '@mui/material';
@@ -21,7 +21,7 @@ import {
 import { setModalData, setModalIsOpen } from '../../store/slices/modalSlise';
 
 function Product() {
-  const { linkItemNo } = useParams();
+  const linkItemNo = useLocation().pathname.slice(1);
   const [show, setShow] = useState(false);
   const handleOpenAccordion = () => {
     setShow(!show); // Toggle accordion
@@ -30,7 +30,7 @@ function Product() {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.productsAll.products);
 
-  const [theProduct] = products.filter((product) => product.itemNo === linkItemNo);
+  const [theProduct] = products.filter((product) => product.itemNo.toString() === linkItemNo.toString());
   const {
     _id,
     itemNo,
