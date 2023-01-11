@@ -1,0 +1,93 @@
+.cardProductBox {
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.cardProductImgWrapper {
+  padding: 0;
+  background: none;
+}
+
+.cardProductInfoWrapper {
+  padding: 0;
+}
+
+.cardInfoTitleText {
+  font-weight: 500;
+}
+
+.cardProductImg {
+  width: 100%;
+  max-width: 280px;
+  padding: 0;
+  margin: 0;
+  border-radius: 5%;
+}
+
+.cardPriceWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 8px;
+}
+
+.cardPrice {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.cardQuantityWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardQuantityBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cardQuantitySet {
+  border: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cardQuantitySet span {
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.cardMinus,
+.cardPlus {
+  border: none;
+  color: #456f49;
+  transform: scale(1.2);
+}
+
+.cardNum {
+  border: 1px solid #9aa89b;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.star {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #1fa92d;
+  transform: scale(1.1);
+}
+
+.favoritesIcon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}

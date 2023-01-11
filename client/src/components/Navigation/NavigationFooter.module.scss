@@ -1,0 +1,50 @@
+@use "../../styles/abstracts/_variables";
+@use "../../styles/abstracts/_breakpoints";
+
+.listNavigationFooter {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.itemNavigationFooter {
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: breakpoints.$tablet-min-width) {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: breakpoints.$desktop-min-width) {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.itemNavigationFooterLink {
+  text-decoration: none;
+  font-family: variables.$fontFamilyMontserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: variables.$color-light;
+
+  @media (min-width: breakpoints.$tablet-min-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: breakpoints.$desktop-min-width) {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}

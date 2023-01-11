@@ -1,0 +1,65 @@
+.wrapperCheckbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  border: 2px solid #2a592e;
+  border-radius: 1%;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #477547;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Montserrat, serif;
+  font-style: normal;
+}
+
+.main_title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: #202b21;
+}
+
+.textArea {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.cart__containerOrder {
+  margin: 20px 0 0;
+
+  @media (min-width: 769px) {
+    display: flex;
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+
+.cart__order {
+  margin-bottom: 12px;
+  padding: 10px 0 0 40px;
+  background: #e7f1e8;
+  border-radius: 5px;
+
+  @media (min-width: 769px) {
+    width: 60%;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1025px) {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.formik_error {
+  color: red;
+  margin: 5px;
+}

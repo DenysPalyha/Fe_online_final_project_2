@@ -1,0 +1,45 @@
+@use "../../styles/abstracts/variables";
+@import "../../styles/abstracts/config";
+
+.wrapper {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.title {
+  padding-top: 50px;
+  font-size: 23px;
+  line-height: 130%;
+  color: #202b21;
+  margin-bottom: 50px;
+
+  @media (min-width: variables.$tablet-bp) {
+    font-size: 32px;
+  }
+}
+
+.dot__margin {
+  margin-bottom: 40px;
+}
+
+:global(.slick-slider .slick-dots li) {
+  border-radius: 50%;
+  border: 1px solid #2a592e;
+
+  & .slick-active {
+    background: #2a592e;
+  }
+}
+
+:global(.slick-slider .slick-dots .slick-active) {
+  background: #2a592e;
+}
+
+.center {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.productsItem {
+  padding: 10px;
+}

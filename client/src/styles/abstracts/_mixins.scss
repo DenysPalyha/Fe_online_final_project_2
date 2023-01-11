@@ -1,0 +1,36 @@
+@import "breakpoints";
+
+@mixin font($fontWeightValue, $fontSizeValue, $lineHeightValue) {
+  font-weight: $fontWeightValue;
+  font-size: $fontSizeValue + px;
+  line-height: $lineHeightValue + px;
+}
+
+@mixin flexCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mainContainer {
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+@mixin mainItemsWrapper {
+  font-family: Montserrat, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4px;
+  justify-content: start;
+  justify-items: start;
+  align-items: start;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  margin: 12px 0;
+  width: 100%;
+  max-height: max-content;
+}
